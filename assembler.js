@@ -18,6 +18,7 @@ function SimulatorWidget(node) {
   var labels = Labels();
   var simulator = Simulator();
   var assembler = Assembler();
+  var ledbar = LEDBar();
 
   function initialize() {
     stripText();
@@ -206,6 +207,19 @@ function SimulatorWidget(node) {
       initialize: initialize,
       reset: reset,
       updatePixel: updatePixel
+    };
+  }
+  
+  
+  function LEDBar() {
+    
+    function setstate() {
+      var state = memory.get(0x8000)
+      
+    }
+    
+    return {
+      setstate: setstate
     };
   }
 
