@@ -86,6 +86,7 @@
 
 .monitorControls input {
   margin-right: 0.5em;
+  float: left;
 }
 
 .monitor {
