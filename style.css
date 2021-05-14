@@ -1,7 +1,7 @@
 .led-on {
     float: left;
     margin: 20px auto;
-    margin-right: 5px;
+    margin-right: 3px;
     width: 12px;
     height: 12px;
     background-color: #F00;
@@ -11,7 +11,7 @@
 .led-off {
     float: left;
     margin: 20px auto;
-    margin-right: 5px;
+    margin-right: 3px;
     width: 12px;
     height: 12px;
     background-color: #900;
