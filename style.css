@@ -79,6 +79,7 @@
 .monitorControls {
   width: 587px;
   clear: left;
+  float: left;
   margin-bottom: 10px;
   padding: 0;
 }
