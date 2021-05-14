@@ -1,5 +1,5 @@
 .led-on {
-    float: left;
+    float: right;
     margin: 20px auto;
     margin-right: 5px;
     width: 12px;
@@ -10,7 +10,7 @@
 }
 
 .led-off {
-    float: left;
+    float: right;
     margin: 20px auto;
     margin-right: 5px;
     width: 12px;
@@ -81,12 +81,10 @@
   clear: both;
   margin-bottom: 10px;
   padding: 0;
-  float: left;
 }
 
 .monitorControls input {
   margin-right: 0.5em;
-  float: left;
 }
 
 .monitor {
