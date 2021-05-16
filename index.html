@@ -54,6 +54,16 @@
 
 Memory location $fe contains a new random byte on every instruction.
 Memory location $ff contains the ascii code of the last key pressed.
+        
+Assembler directive: DCB <byte1> [, <byte2> ...] for arbitrary data.
+Assembler label: <label>:
+All text following the semicolon is considered to be a comment.
+Set address with *=<address>
+        
+For example, to store $01, $02, $03 starting at $210:
+
+*=$0210
+DCB $01, $02, $03
 
 Memory locations $9000 to $93ff map to the screen pixels. Different values will
 draw different colour pixels. The colours are:
