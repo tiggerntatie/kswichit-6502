@@ -198,8 +198,8 @@ function SimulatorWidget(node) {
 
     function updatePixel(addr) {
       ctx.fillStyle = palette[memory.get(addr) & 0x0f];
-      var y = Math.floor((addr - 0x200) / 32);
-      var x = (addr - 0x200) % 32;
+      var y = Math.floor((addr - 0x09000) / 32);
+      var x = (addr - 0x09000) % 32;
       ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
     }
 
@@ -246,7 +246,7 @@ function SimulatorWidget(node) {
 
     function storeByte(addr, value) {
       set(addr, value & 0xff);
-      if ((addr >= 0x200) && (addr <= 0x5ff)) {
+      if ((addr >= 0x09000) && (addr <= 0x095ff)) {
         display.updatePixel(addr);
       }
     }
