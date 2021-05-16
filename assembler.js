@@ -214,14 +214,14 @@ function SimulatorWidget(node) {
   function LEDBar() {
     
     function setstate(state) {
-      $node.find('#led-7').attr('class', state & 0x080 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-6').attr('class', state & 0x040 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-5').attr('class', state & 0x020 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-4').attr('class', state & 0x010 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-3').attr('class', state & 0x08 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-2').attr('class', state & 0x04 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-1').attr('class', state & 0x02 != 0 ? 'led-on' : 'led-off');
-      $node.find('#led-0').attr('class', state & 0x01 != 0 ? 'led-on' : 'led-off');
+      $('#led-7').attr('class', state & 0x080 != 0 ? 'led-on' : 'led-off');
+      $('#led-6').attr('class', state & 0x040 != 0 ? 'led-on' : 'led-off');
+      $('#led-5').attr('class', state & 0x020 != 0 ? 'led-on' : 'led-off');
+      $('#led-4').attr('class', state & 0x010 != 0 ? 'led-on' : 'led-off');
+      $('#led-3').attr('class', state & 0x08 != 0 ? 'led-on' : 'led-off');
+      $('#led-2').attr('class', state & 0x04 != 0 ? 'led-on' : 'led-off');
+      $('#led-1').attr('class', state & 0x02 != 0 ? 'led-on' : 'led-off');
+      $('#led-0').attr('class', state & 0x01 != 0 ? 'led-on' : 'led-off');
     }
     
     return {
