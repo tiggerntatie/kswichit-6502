@@ -246,7 +246,7 @@ function SimulatorWidget(node) {
 
     function storeByte(addr, value) {
       set(addr, value & 0xff);
-      if ((addr >= 0x09000) && (addr <= 0x095ff)) {
+      if ((addr >= 0x09000) && (addr <= 0x093ff)) {
         display.updatePixel(addr);
       }
     }
