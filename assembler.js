@@ -213,8 +213,7 @@ function SimulatorWidget(node) {
   
   function LEDBar() {
     
-    function setstate() {
-      var state = memory.get(0x8000)
+    function setstate(state) {
       $node.find('.led-7').attr('background-color', state & 0x080 ? '#F00' : '#900');
       $node.find('.led-6').attr('background-color', state & 0x040 ? '#F00' : '#900');
       $node.find('.led-5').attr('background-color', state & 0x020 ? '#F00' : '#900');
@@ -234,10 +233,10 @@ function SimulatorWidget(node) {
     var memArray = new Array(0x600);
 
     function set(addr, val) {
-      return memArray[addr] = val;
       if (addr == 0x8000) {
-        ledbar.setstate();
+        ledbar.setstate(val);
       }
+      return memArray[addr] = val;
     }
 
     function get(addr) {
