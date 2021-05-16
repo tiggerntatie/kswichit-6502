@@ -5,6 +5,9 @@
 *  Adapted by Nick Morgan
 *  https://github.com/skilldrick/6502js
 *
+*  Further adapted by Eric Dennison for emulating the kswichit microprocessor kit
+*  https://github.com/tiggerntatie/kswichit-6502
+*
 *  Released under the GNU General Public License
 *  see http://gnu.org/licenses/gpl.html
 */
