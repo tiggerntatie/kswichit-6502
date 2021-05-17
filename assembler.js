@@ -1640,9 +1640,12 @@ function SimulatorWidget(node) {
     // reset() - Reset CPU and memory.
     function reset() {
       display.reset();
+      /*
       for (var i = 0; i < 0x200; i++) { // clear ZP, stack
         memory.set(i, 0x00);
       }
+      */
+      ledbar.setstate(0);  // clear the led bar
       for (var i = 0x9000; i < 0x93ff; i++) { // screen
         memory.set(i, 0x00);
       }
