@@ -2,7 +2,7 @@
 
 [Kswichit 6502 Microprocessor Kit Simulator](https://tiggerntatie.github.io/kswichit-6502/)
 
-A JavaScript 6502 assembler and simulator compatible with the [6502 Microprocessor Kit designed by Wichit Sirichote](https://www.kswichit.com/6502/6502.html).
+A JavaScript 6502 assembler and simulator compatible with the [6502 Microprocessor Kit designed by Wichit Sirichote](https://www.kswichit.net/6502/6502.html).
 
 The original code is (C)2006-2010 Stian Soreng - www.6502asm.com
 
